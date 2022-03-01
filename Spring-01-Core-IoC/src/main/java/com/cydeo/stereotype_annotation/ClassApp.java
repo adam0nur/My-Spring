@@ -10,6 +10,9 @@ public class ClassApp {
         ApplicationContext applicationContext=new AnnotationConfigApplicationContext(ConfigCourse.class);
         applicationContext.getBean(Java.class).getTeachingHours();
 
+        applicationContext.getBean(Agile.class).getTeachingHours();
+
+        applicationContext.getBean(Selenium.class).getTeachingHours();
 
     }
 
