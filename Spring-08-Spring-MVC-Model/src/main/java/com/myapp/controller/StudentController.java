@@ -27,18 +27,14 @@ public class StudentController {
         model.addAttribute("id",studentId);
 
         List<Integer> numbers = new ArrayList<>();
-        numbers.add(4);
-        numbers.add(5);
+        numbers.add(2);
+        numbers.add(3);
         numbers.add(7);
         numbers.add(10);
         model.addAttribute("numbers",numbers);
 
         Student student = new Student(1,"Mike","Smith");
         model.addAttribute("student",student);
-
-
-
-
         return "student/welcome";
     }
 
