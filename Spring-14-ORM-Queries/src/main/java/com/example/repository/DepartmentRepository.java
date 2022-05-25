@@ -19,7 +19,7 @@ public interface DepartmentRepository extends JpaRepository<Department,String> {
     List<Department> findDistinctTop3ByDivisionContains(String pattern);
 
 
-    @Query
+    @Query// check Jpa
     List<Department> retrieveDepartmentByDivision(String division);
 
     @Query(nativeQuery = true)
